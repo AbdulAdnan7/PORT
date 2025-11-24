@@ -21,7 +21,7 @@ const HeroSection = () => {
 
             <div className='flex gap-4'>
                 <a href="../src/assets/AbdulAdnan.pdf" download>
-                <button className='bg-linear-to-br from-rose-300 via-rose-600 to-rose-800 font-semibold hover:bg-white hover:border-rose-600 flex items-center gap-2 p-3 rounded mt-4 ml-1'> <FiFileText /> Resume</button>
+                <button className='bg-linear-to-br from-rose-300 via-rose-600 to-rose-800 font-semibold hover:bg-white hover:border-rose-600 cursor-pointer flex items-center gap-2 p-3 rounded mt-4 ml-1'> <FiFileText /> Resume</button>
                 </a>
 
                 <button className='bg-linear-to-br from-emerald-700 via-emerald-800 to-emerald-300 disabled:opacity-45 disabled:cursor-not-allowed  p-3 rounded flex items-center mt-4'>
