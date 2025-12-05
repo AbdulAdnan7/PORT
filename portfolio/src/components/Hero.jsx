@@ -27,7 +27,7 @@ function Hero() {
 
     return (
         <>
-            <div className='bg-gray-950 flex flex-col w-full h-screen items-center py-40'>
+            <section className='bg-gray-950 flex flex-col w-full h-screen items-center py-40' id='home'>
                 
                 <div className='border border-white/10  flex justify-center self-center bg-white/5 items-center gap-2 text-white px-4 py-2 rounded-full'>
                     <p className='bg-green-500 w-2 h-2 rounded-full animate-pulse'></p>
@@ -155,7 +155,7 @@ function Hero() {
 <Navbar />
 
 
-            </div>
+            </section>
         </>
     )
 }
