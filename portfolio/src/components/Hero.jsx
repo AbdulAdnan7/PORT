@@ -130,6 +130,27 @@ function Hero() {
 
 </div>
 
+<div className='mt-10'>
+    <div className="flex flex-col items-center mt-10">
+  <p className="text-gray-400 text-sm">Scroll Down</p>
+  
+  <div className="mt-2 animate-bounce">
+    <svg
+      width="28"
+      height="28"
+      fill="none"
+      stroke="white"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M6 9l6 6 6-6" />
+    </svg>
+  </div>
+</div>
+
+</div>
+
 
             </div>
         </>
