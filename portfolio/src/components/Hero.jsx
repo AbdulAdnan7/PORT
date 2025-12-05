@@ -85,7 +85,7 @@ function Hero() {
                             </button>
                         </a>
                         <a
-                            href="#contact"
+                            href="mailto:peerabduladnan@gmail.com"
                             className="text-white border border-white/20 bg-green-500/10 rounded-full flex items-center gap-2 px-6 py-2 font-medium hover:bg-green-500/20 hover:scale-105"
                         >
                             <Briefcase /> Hire Me
