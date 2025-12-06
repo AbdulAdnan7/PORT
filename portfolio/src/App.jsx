@@ -6,6 +6,7 @@ import Hero from './components/Hero'
 import { AnimatedBackground } from './components/AnimatedBackround'
 import SkillSet from './components/SkillSet'
 import Projects from './components/Projects'
+import AboutMe from './components/AboutMe'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Hero />
           <SkillSet />
           <Projects />
+          <AboutMe />
         </div>
 
       </div>
