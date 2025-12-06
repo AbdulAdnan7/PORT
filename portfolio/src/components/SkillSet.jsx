@@ -1,5 +1,6 @@
 import React from 'react'
 import { AnimatedBackground } from './AnimatedBackround'
+import Projects from './Projects'
 
 const TechIcons =  {
   React: () => (
@@ -67,9 +68,8 @@ const SkillSet = () => {
 
   return (
     <>
-      <section className='relative w-full py-10 bg-gray-950 min-h-screen'>
-        <AnimatedBackground variant='mixed' density='low' />
-        <div className='relative z-10 justify-center py-10 text-center'>
+      <section className=' w-full py-8 bg-gray-950'>
+        <div className='relative z-10 justify-center py-2 text-center'>
 
           <h1 className='text-white text-6xl'>Skills</h1>
         </div>
@@ -86,7 +86,7 @@ const SkillSet = () => {
                 {cateo.skills.map((skill) => {
                   const Icon = TechIcons[skill.icon]
                   return (
-                    <div key={skill.name} className='bg-white/10 border gap-2 rounded-full flex py-2 px-6 mt-4'>
+                    <div key={skill.name} className='bg-white/10 border border-white/20 gap-2 rounded-full flex py-2 px-6 mt-4'>
                     { Icon && <Icon/> }
                     <span className='text-white'>{skill.name}</span>
                     </div>
@@ -98,7 +98,6 @@ const SkillSet = () => {
         ))
        }
         </div>
-
       </section>
     </>
   )
