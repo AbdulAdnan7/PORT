@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Wand2, Briefcase, GraduationCap, Clock, DownloadCloud, Github, Instagram, Linkedin, Twitter } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Navbar from './Navbar'
+import SkillSet from './SkillSet'
 
 
 function Hero() {
@@ -41,7 +42,7 @@ function Hero() {
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: -10 }}
                                 transition={{ duration: 0.3 }}
-                                className="inline-flex items-center gap-1.5 font-medium text-gray-900 dark:text-white"
+                                className="inline-flex items-center gap-1.5 font-medium dark:text-white"
                             >
 
                                 <span className='font-semibold flex items-center gap-1 ml-1'>
@@ -153,6 +154,9 @@ function Hero() {
 
 </div>
 <Navbar />
+
+
+    <SkillSet />
 
 
             </section>

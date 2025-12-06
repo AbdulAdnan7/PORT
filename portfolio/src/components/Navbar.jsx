@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Home, User, Briefcase, Mail } from 'lucide-react'
+import { Home, User, Briefcase, Mail, Clock } from 'lucide-react'
 
 const Navbar = () => {
 
@@ -32,7 +32,8 @@ const Navbar = () => {
                         <a className='flex gap-2 text-white hover:text-gray-300 items-center'><Briefcase /> Projects</a>
                         <a className='flex gap-2 text-white hover:text-gray-300 items-center'><User /> About</a>
                         <a className='flex gap-2 text-white hover:text-gray-300 items-center'><Mail /> Contact</a>
-                        <span className='text-gray-200 font-medium px-3 py-1 rounded-full'>{time}</span>
+                   
+                        <span className='text-gray-200 font-medium px-3 py-1 flex  gap-2 rounded-full'> <Clock /> {time}</span>
                     </div>
                 </div>
 
@@ -41,7 +42,7 @@ const Navbar = () => {
                     <div className='flex items-center justify-between gap-6 px-6 py-3 bg-white/10 border border-white/20 rounded-full backdrop-blur-xl shadow-lg text-white'>
                         <a href=""><Home className="w-6 h-6" /></a>
                         <a href="" className='w-6 h-6'><Briefcase /></a>
-                        <span>{time}</span>
+                        <span className='flex gap-2'><Clock/>{time}</span>
                         <a href="" className='w-6 h-6'><User /></a>
                         <a href="" className='w-6 h-6'><Mail /></a>
                     </div>
