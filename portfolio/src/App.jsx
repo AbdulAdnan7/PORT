@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -11,8 +11,22 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 
-
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+    
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual'
+    }
+    
+    window.history.replaceState(null, null, ' ')
+    
+  
+    setTimeout(() => {
+      window.scrollTo(0, 0)
+    }, 100)
+  }, [])
+
   return (
     <>
       <div className='relative'>
@@ -26,9 +40,7 @@ function App() {
           <Contact />
           <Footer />
         </div>
-
       </div>
-
     </>
   )
 }

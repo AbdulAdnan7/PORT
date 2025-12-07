@@ -29,7 +29,7 @@ function Hero() {
 
     return (
         <>
-            <section className='bg-gray-950 flex flex-col w-full items-center py-40' id='home'>
+            <section className='bg-gray-950 flex flex-col w-full items-center py-40' id='hero'>
                 <AnimatedBackground />
                 
                 <div className='border border-white/10  flex justify-center self-center bg-white/5 items-center gap-2 text-white px-4 py-2 rounded-full'>

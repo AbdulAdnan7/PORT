@@ -11,29 +11,29 @@ const Projects = () => {
     desc: "An Expense Manager App built with React + Tailwind",
     status: "Building",
     img: K,
-    github: "https://github.com/AbdulAdnan7/portfolio",
-    live: "https://your-portfolio.live",
+    github: "https://github.com/AbdulAdnan7",
+    live: "https://peerabduladnans.vercel.app",
   },
   {
     title: "Trip-Mind",
     desc: "Real-time Suggestions for planning trip abord",
         status: "Building",
     img: K,
-    github: "https://github.com/AbdulAdnan7/weather",
-    live: "https://weather-live.com",
+    github: "https://github.com/AbdulAdnan7",
+    live: "https://peerabduladnans.vercel.app",
   },
   {
     title: "TechXoM",
     desc: "MERN stack store with cart & authentication",
         status: "Building",
     img: K,
-    github: "https://github.com/AbdulAdnan7/ecommerce",
-    live: "https://ecom-live.com",
+    github: "https://github.com/AbdulAdnan7",
+    live: "https://peerabduladnans.vercel.app",
   },
 ];
     return (
-        <div className='text-white bg-gray-950 py-4' id='project'>
-            <div className='flex justify-center'>
+        <section className='text-white bg-gray-950 py-4 ' id='projects' >
+            <div className='flex justify-center' >
                 <h1 className='text-6xl'>Projects</h1>
             </div>
 
@@ -89,7 +89,7 @@ const Projects = () => {
 
         </div>
 
-        </div>
+        </section>
     )
 }
 
