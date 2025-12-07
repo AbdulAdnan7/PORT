@@ -155,7 +155,6 @@ function Hero() {
 </div>
 
 </div>
-<Navbar />
 
 
 

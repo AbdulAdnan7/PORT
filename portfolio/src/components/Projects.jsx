@@ -32,7 +32,7 @@ const Projects = () => {
   },
 ];
     return (
-        <div className='text-white bg-gray-950 py-4'>
+        <div className='text-white bg-gray-950 py-4' id='project'>
             <div className='flex justify-center'>
                 <h1 className='text-6xl'>Projects</h1>
             </div>

@@ -7,6 +7,9 @@ import { AnimatedBackground } from './components/AnimatedBackround'
 import SkillSet from './components/SkillSet'
 import Projects from './components/Projects'
 import AboutMe from './components/AboutMe'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import Navbar from './components/Navbar'
 
 
 function App() {
@@ -15,10 +18,13 @@ function App() {
       <div className='relative'>
         <AnimatedBackground variant='mixed' density='medium' />
         <div className='relative z-10'>
+          <Navbar />
           <Hero />
           <SkillSet />
           <Projects />
           <AboutMe />
+          <Contact />
+          <Footer />
         </div>
 
       </div>
