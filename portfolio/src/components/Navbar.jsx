@@ -9,7 +9,8 @@ const Navbar = () => {
             const now = new Date()
             const formatted = now.toLocaleTimeString([], {
                 hour: "2-digit",
-                minute: "2-digit"
+                minute: "2-digit",
+                hour12: false
             })
             setTime(formatted)
         }
