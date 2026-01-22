@@ -23,12 +23,12 @@ const Projects = () => {
     live: "https://peerabduladnans.vercel.app",
   },
   {
-    title: "TechXoM",
-    desc: "MERN stack store with cart & authentication",
+    title: "Notes",
+    desc: "A fast, clean, and secure Notes App for managing personal notes with ease.",
         status: "Building",
     img: K,
     github: "https://github.com/AbdulAdnan7",
-    live: "https://peerabduladnans.vercel.app",
+    live: "https://notes-sepia-nu.vercel.app",
   },
 ];
     return (
