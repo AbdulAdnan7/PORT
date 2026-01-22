@@ -12,7 +12,7 @@ const Projects = () => {
     status: "Building",
     img: K,
     github: "https://github.com/AbdulAdnan7",
-    live: "https://peerabduladnans.vercel.app",
+    live: "https://lusios.vercel.app",
   },
   {
     title: "Trip-Mind",
