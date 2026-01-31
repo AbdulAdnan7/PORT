@@ -50,44 +50,44 @@ const AboutMe = () => {
           </div>
 
 
-<div className="bg-linear-to-br from-rose-500/20 to-rose-300/10
+          <div className="bg-linear-to-br from-rose-500/20 to-rose-300/10
 border border-rose-400/20 p-6 rounded-2xl backdrop-blur-xl
 flex flex-col items-center justify-center text-center">
 
-  {/* Logo */}
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    className="w-12 h-12 text-white mb-3"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-    strokeWidth="1.5"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M12 14.25L3.75 9.75 12 5.25l8.25 4.5L12 14.25z"
-    />
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M3.75 9.75v4.5L12 19.5l8.25-5.25v-4.5"
-    />
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M12 19.5v-5.25"
-    />
-  </svg>
+            {/* Logo */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-12 h-12 text-white mb-3"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth="1.5"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 14.25L3.75 9.75 12 5.25l8.25 4.5L12 14.25z"
+              />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 9.75v4.5L12 19.5l8.25-5.25v-4.5"
+              />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 19.5v-5.25"
+              />
+            </svg>
 
-  <h3 className="text-white text-lg font-semibold mb-1">
-    Graduation Project
-  </h3>
+            <h3 className="text-white text-lg font-semibold mb-1">
+              Graduation Project
+            </h3>
 
-  <p className="text-green-300/60 text-sm">
-    ✦ Coming Soon ✦
-  </p>
-</div>
+            <p className="text-green-300/60 text-sm">
+              ✦ Coming Soon ✦
+            </p>
+          </div>
 
 
 

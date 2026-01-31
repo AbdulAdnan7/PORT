@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Wand2, Briefcase, GraduationCap, Clock, DownloadCloud, Github, Instagram, Linkedin, Twitter } from 'lucide-react'
+// eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from 'framer-motion'
 import Navbar from './Navbar'
 import SkillSet from './SkillSet'

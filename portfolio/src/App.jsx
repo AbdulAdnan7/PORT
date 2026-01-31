@@ -1,6 +1,4 @@
 import { useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Hero from './components/Hero'
 import { AnimatedBackground } from './components/AnimatedBackround'
@@ -10,6 +8,7 @@ import AboutMe from './components/AboutMe'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
+import  JourneyMap  from './components/Journey'
 
 function App() {
   useEffect(() => {
@@ -37,6 +36,7 @@ function App() {
           <SkillSet />
           <Projects />
           <AboutMe />
+          <JourneyMap />
           <Contact />
           <Footer />
         </div>
