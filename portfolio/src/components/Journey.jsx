@@ -7,7 +7,7 @@ export function JourneyMap() {
 
   const journeySteps = [
     {
-      year: "2022",
+      year: "2023",
       title: "Discovered Coding",
       description:
         "Started learning web development and fell in love with creating digital experiences",
@@ -15,7 +15,7 @@ export function JourneyMap() {
       type: "education",
     },
     {
-      year: "2023",
+      year: "2024",
       title: "Built First Projects",
       description:
         "Created multiple personal projects and contributed to open source communities",
@@ -23,7 +23,7 @@ export function JourneyMap() {
       type: "learning",
     },
     {
-      year: "2024",
+      year: "2025",
       title: "Mastered Full Stack",
       description:
         "Gained expertise in React, Node.js, and modern web technologies through hands-on learning",
@@ -31,7 +31,7 @@ export function JourneyMap() {
       type: "achievement",
     },
     {
-      year: "2025",
+      year: "2026",
       title: "Ready for Opportunities",
       description:
         "Seeking my first role as a developer to apply my skills and grow professionally",
