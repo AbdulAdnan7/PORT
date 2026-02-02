@@ -121,7 +121,8 @@ flex flex-col items-center justify-center text-center">
               Final Year Project
             </h3>
 
-            <p className="text-green-300/60 text-sm">
+            <p className="px-2 py-0.5 rounded-full text-xs
+          text-green-300 bg-green-500/10 border border-green-500/30">
               ✦ Coming Soon ✦
             </p>
           </div>
