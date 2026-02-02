@@ -1,6 +1,6 @@
 import React from "react";
 import ST from '/ST.png'
-import CITY from '/CITY.webp'
+import CITY from '/City.png'
 const AboutMe = () => {
   return (
     <section className="bg-gray-950 py-4">
@@ -30,51 +30,57 @@ const AboutMe = () => {
               Education
             </h2>
 
-            <div className="space-y-8">
-              {/* Item */}
-              <div className="flex items-start gap-6">
-                <img
-                  src={ST}
-                  alt="St. Joseph's Degree College"
-                  className="w-16 h-16 object-contain"
-                />
+        <div className="space-y-8">
+  {/* Item */}
+  <div className="flex items-start gap-6">
+    <div className="w-16 h-16 flex items-center justify-center">
+      <img
+        src={ST}
+        alt="St. Joseph's Degree College"
+        className="max-w-full max-h-full object-contain"
+      />
+    </div>
 
-                <div className="relative pl-5 border-l border-white/10">
-                  <p className="font-medium text-white">
-                    St. Joseph&apos;s Degree College — BCA
-                  </p>
-                  <p className="mt-1 text-sm text-white/60">
-                    2023 – 2026 ·{" "}
-                    <span className="text-emerald-400 font-medium">
-                      Ongoing
-                    </span>
-                  </p>
-                </div>
-              </div>
+    <div className="relative pl-5 border-l border-white/10">
+      <p className="font-medium text-white">
+        St. Joseph&apos;s Degree College — BCA
+      </p>
+      <p className="mt-1 text-sm text-white/60">
+        2023 – 2026 ·{" "}
+        <span className="text-emerald-400 font-medium">
+          Ongoing
+        </span>
+      </p>
+    </div>
+  </div>
 
-              {/* Item */}
-              <div className="flex items-start gap-6">
-                <img
-                  src={CITY}
-                  alt="Government City College"
-                  className="w-16 h-16 object-contain"
-                />
+  {/* Item */}
+  <div className="flex items-start gap-6">
+    <div className="w-16 h-16 flex items-center justify-center">
+      <img
+        src={CITY}
+        alt="Government City College"
+        className="max-w-full max-h-full object-contain"
+      />
+    </div>
 
-                <div className="relative pl-5 border-l border-white/10">
-                  <p className="font-medium text-white">
-                    Government City College — Commerce
-                  </p>
-                  <p className="mt-1 text-sm text-white/60">
-                    2021 – 2023 ·{" "}
-                    <span className="px-2 py-0.5 rounded-full text-xs 
-text-blue-300 bg-blue-500/10 border border-blue-500/30">
-                      Completed
-                    </span>
+    <div className="relative pl-5 border-l border-white/10">
+      <p className="font-medium text-white">
+        Government City College — Commerce
+      </p>
+      <p className="mt-1 text-sm text-white/60">
+        2021 – 2023 ·{" "}
+        <span
+          className="px-2 py-0.5 rounded-full text-xs
+          text-blue-300 bg-blue-500/10 border border-blue-500/30"
+        >
+          Completed
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
 
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
 
 
