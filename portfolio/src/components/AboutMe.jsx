@@ -1,5 +1,6 @@
 import React from "react";
-
+import ST from '/ST.png'
+import CITY from '/CITY.webp'
 const AboutMe = () => {
   return (
     <section className="bg-gray-950 py-4">
@@ -25,29 +26,57 @@ const AboutMe = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
           <div className="bg-white/5 border border-white/10 text-white p-6 rounded-2xl backdrop-blur-xl">
-            <h2 className="text-xl font-semibold mb-4">Education</h2>
+            <h2 className="text-xl font-semibold mb-6 tracking-tight">
+              Education
+            </h2>
 
-            <div className="space-y-4 text-white/70">
-              <div>
-                <p className="font-medium text-white">
-                  St. Joseph's Degree College — BCA
-                </p>
-                <p className="text-sm">
-                  2023 – 2026 | <span className="text-green-600">Ongoing</span>
-                </p>
+            <div className="space-y-8">
+              {/* Item */}
+              <div className="flex items-start gap-6">
+                <img
+                  src={ST}
+                  alt="St. Joseph's Degree College"
+                  className="w-16 h-16 object-contain"
+                />
+
+                <div className="relative pl-5 border-l border-white/10">
+                  <p className="font-medium text-white">
+                    St. Joseph&apos;s Degree College — BCA
+                  </p>
+                  <p className="mt-1 text-sm text-white/60">
+                    2023 – 2026 ·{" "}
+                    <span className="text-emerald-400 font-medium">
+                      Ongoing
+                    </span>
+                  </p>
+                </div>
               </div>
 
-              <div>
-                <p className="font-medium text-white">
-                  Government City College — Commerce
-                </p>
-                <p className="text-sm">
-                  2021 – 2023 |{" "}
-                  <span className="text-green-600">Distinction</span>
-                </p>
+              {/* Item */}
+              <div className="flex items-start gap-6">
+                <img
+                  src={CITY}
+                  alt="Government City College"
+                  className="w-16 h-16 object-contain"
+                />
+
+                <div className="relative pl-5 border-l border-white/10">
+                  <p className="font-medium text-white">
+                    Government City College — Commerce
+                  </p>
+                  <p className="mt-1 text-sm text-white/60">
+                    2021 – 2023 ·{" "}
+                    <span className="text-blue-400 font-medium">
+                      Completed
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+
+
+
 
 
           <div className="bg-linear-to-br from-rose-500/20 to-rose-300/10
