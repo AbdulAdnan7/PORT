@@ -1,96 +1,115 @@
-import React from 'react'
-import K from '/k.png'
-import { Github, ExternalLink } from 'lucide-react';
-import BuildingPill from './BuildingPill';
+import React from "react";
+import K from "/k.png";
+import { Github, ExternalLink } from "lucide-react";
+import BuildingPill from "./BuildingPill";
 
 const Projects = () => {
+  const projects = [
+    {
+      title: "Lusios",
+      desc: "An expense manager app built with React and Tailwind CSS.",
+      status: "Building",
+      img: K,
+      github: "https://github.com/AbdulAdnan7",
+      live: "https://lusios.vercel.app",
+    },
+    {
+      title: "Trip-Mind",
+      desc: "Real-time smart suggestions for planning trips abroad. {Trip Mind}",
+      status: "Building",
+      img: K,
+      github: "https://github.com/AbdulAdnan7",
+      live: "https://peerabduladnans.vercel.app",
+    },
+    {
+      title: "Notes",
+      desc: "A fast, clean, and secure notes app for managing personal ideas.",
+      status: "Building",
+      img: K,
+      github: "https://github.com/AbdulAdnan7",
+      live: "https://notes-sepia-nu.vercel.app",
+    },
+  ];
 
-    const projects = [
-  {
-    title: "Lusios",
-    desc: "An Expense Manager App built with React + Tailwind",
-    status: "Building",
-    img: K,
-    github: "https://github.com/AbdulAdnan7",
-    live: "https://lusios.vercel.app",
-  },
-  {
-    title: "Trip-Mind",
-    desc: "Real-time Suggestions for planning trip abord",
-        status: "Building",
-    img: K,
-    github: "https://github.com/AbdulAdnan7",
-    live: "https://peerabduladnans.vercel.app",
-  },
-  {
-    title: "Notes",
-    desc: "A fast, clean, and secure Notes App for managing personal notes with ease.",
-        status: "Building",
-    img: K,
-    github: "https://github.com/AbdulAdnan7",
-    live: "https://notes-sepia-nu.vercel.app",
-  },
-];
-    return (
-        <section className='text-white bg-gray-950 py-4 ' id='projects' >
-            <div className='flex justify-center' >
-                <h1 className='text-6xl'>Projects</h1>
-            </div>
+  return (
+    <section
+      id="projects"
+      className="bg-gray-950 text-white py-16"
+    >
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h1 className="text-5xl md:text-6xl font-semibold tracking-tight">
+            Projects
+          </h1>
+          <p className="text-white/50 mt-3">
+            A selection of things I’m currently building
+          </p>
+        </div>
 
-           <div className="grid grid-cols-1 m-6 sm:grid-cols-2 py-6 md:grid-cols-3 gap-6 place-items-center">
-
+        {/* Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
           {projects.map((p, index) => (
-            <div 
-              key={index} 
-              className="border border-white/10 bg-white/5 p-4 rounded-xl text-center 
-              hover:bg-white/10 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 w-full max-w-xs"
+            <div
+              key={index}
+              className="w-full max-w-sm rounded-2xl border border-white/10 
+              bg-white/5 p-4 text-center
+              transition-all duration-300
+              hover:bg-white/10 hover:-translate-y-1 hover:shadow-2xl"
             >
-              
-              
+              {/* Image */}
               <img
                 src={p.img}
-                className="w-full h-36 object-cover rounded-lg"
                 alt={p.title}
+                loading="lazy"
+                className="w-full h-36 object-cover rounded-xl"
               />
 
-           
-              <h2 className="text-white font-semibold mt-3 flex items-center justify-center gap-2">{p.title} { p.status && <BuildingPill text={p.status} /> } </h2>
+              {/* Title */}
+              <h2 className="mt-4 font-semibold flex items-center justify-center gap-2">
+                {p.title}
+                {p.status && <BuildingPill text={p.status} />}
+              </h2>
 
-           
-              <p className="text-white/60 text-sm mt-1">{p.desc}</p>
+              {/* Description */}
+              <p className="mt-2 text-sm text-white/60 leading-relaxed">
+                {p.desc}
+              </p>
 
-              
-              <div className="flex justify-center gap-3 mt-4">
-                
+              {/* Links */}
+              <div className="mt-5 flex justify-center gap-3">
                 <a
                   href={p.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-white/80 hover:text-white 
-                  border border-white/20 rounded-full px-3 py-1 text-sm transition-all"
+                  className="inline-flex items-center gap-1 rounded-full
+                  border border-white/20 px-4 py-1.5 text-sm
+                  text-white/80 transition
+                  hover:text-white hover:border-white/40"
                 >
-                  <Github className="w-4 h-4" /> Code
+                  <Github className="w-4 h-4" />
+                  Code
                 </a>
 
                 <a
                   href={p.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-white/80 hover:text-white 
-                  border border-white/20 rounded-full px-3 py-1 text-sm transition-all"
+                  className="inline-flex items-center gap-1 rounded-full
+                  border border-white/20 px-4 py-1.5 text-sm
+                  text-white/80 transition
+                  hover:text-white hover:border-white/40"
                 >
-                  <ExternalLink className="w-4 h-4" /> Live
+                  <ExternalLink className="w-4 h-4" />
+                  Live
                 </a>
-
               </div>
-
             </div>
           ))}
-
         </div>
+      </div>
+    </section>
+  );
+};
 
-        </section>
-    )
-}
-
-export default Projects
+export default Projects;
