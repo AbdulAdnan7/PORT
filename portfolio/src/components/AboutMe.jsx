@@ -66,9 +66,11 @@ const AboutMe = () => {
                   </p>
                   <p className="mt-1 text-sm text-white/60">
                     2021 – 2023 ·{" "}
-                    <span className="text-blue-400 font-medium">
+                    <span className="px-2 py-0.5 rounded-full text-xs 
+text-blue-300 bg-blue-500/10 border border-blue-500/30">
                       Completed
                     </span>
+
                   </p>
                 </div>
               </div>
