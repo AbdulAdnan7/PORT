@@ -79,7 +79,7 @@ const Contact = () => {
 
           <div className="text-white py-4">
             <label htmlFor="description" className="text-2xl font-medium">
-              Description
+              Message
             </label>
             <textarea
               id="description"
@@ -87,7 +87,7 @@ const Contact = () => {
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               rows="5"
-              placeholder="Enter your description"
+              placeholder="What's on your mind"
               className="w-full px-4 py-3 mt-2 bg-white/10 border border-white/20 text-white placeholder-white/50 rounded-xl focus:outline-none transition resize-none"
               required
             />
