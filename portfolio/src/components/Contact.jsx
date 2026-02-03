@@ -96,9 +96,9 @@ const Contact = () => {
           <div>
             <button
               type="submit"
-              className="w-full bg-linear-to-br from-rose-500/20 to-rose-300/10 
-             border border-rose-400/20 text-white p-2 rounded 
-             hover:from-rose-500/40 hover:to-rose-300/20 transition-all"
+              className="w-full bg-linear-to-br from-emerald-500/20 to-emerald-300/10 
+             border border-emerald-400/20 text-white p-2 rounded 
+             hover:from-emerald-500/40 hover:to-emerald-300/20 transition-all"
             >
               Send Email
             </button>
