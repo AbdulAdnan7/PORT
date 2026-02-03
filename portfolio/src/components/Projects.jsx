@@ -25,7 +25,7 @@ const Projects = () => {
     {
       title: "Notes",
       desc: "A fast, clean, and secure notes app for managing personal ideas.",
-      status: "Building",
+      status: "Completed",
       img: Note,
       github: "https://github.com/AbdulAdnan7",
       live: "https://notes-sepia-nu.vercel.app",
@@ -49,67 +49,67 @@ const Projects = () => {
         </div>
 
         {/* Grid */}
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
-  {projects.map((p, index) => (
-    <div
-      key={index}
-      className="group w-full max-w-sm rounded-2xl
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
+          {projects.map((p, index) => (
+            <div
+              key={index}
+              className="group w-full max-w-sm rounded-2xl
       border border-white/10 bg-white/5 p-4 text-center
       transition-all duration-300
       hover:bg-white/10 hover:-translate-y-1 hover:shadow-2xl"
-    >
-      {/* Preview (GIF-safe) */}
-      <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/20">
-        <img
-          src={p.img}
-          alt={p.title}
-          loading="lazy"
-          className="absolute inset-0 w-full h-full object-contain"
-        />
-      </div>
+            >
+              {/* Preview (GIF-safe) */}
+              <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/20">
+                <img
+                  src={p.img}
+                  alt={p.title}
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-contain"
+                />
+              </div>
 
-      {/* Title */}
-      <h2 className="mt-4 font-semibold flex items-center justify-center gap-2">
-        {p.title}
-        {p.status && <BuildingPill text={p.status} />}
-      </h2>
+              {/* Title */}
+              <h2 className="mt-4 font-semibold flex items-center justify-center gap-2">
+                {p.title}
+                {p.status && <BuildingPill text={p.status} />}
+              </h2>
 
-      {/* Description */}
-      <p className="mt-2 text-sm text-white/60 leading-relaxed">
-        {p.desc}
-      </p>
+              {/* Description */}
+              <p className="mt-2 text-sm text-white/60 leading-relaxed">
+                {p.desc}
+              </p>
 
-      {/* Links */}
-      <div className="mt-5 flex justify-center gap-3">
-        <a
-          href={p.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 rounded-full
+              {/* Links */}
+              <div className="mt-5 flex justify-center gap-3">
+                <a
+                  href={p.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 rounded-full
           border border-white/20 px-4 py-1.5 text-sm
           text-white/80 transition
           hover:text-white hover:border-white/40"
-        >
-          <Github className="w-4 h-4" />
-          Code
-        </a>
+                >
+                  <Github className="w-4 h-4" />
+                  Code
+                </a>
 
-        <a
-          href={p.live}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 rounded-full
+                <a
+                  href={p.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 rounded-full
           border border-white/20 px-4 py-1.5 text-sm
           text-white/80 transition
           hover:text-white hover:border-white/40"
-        >
-          <ExternalLink className="w-4 h-4" />
-          Live
-        </a>
-      </div>
-    </div>
-  ))}
-</div>
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  Live
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
 
       </div>
     </section>
