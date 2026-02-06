@@ -39,7 +39,7 @@ const Contact = () => {
 }
 
   return (
-    <section className='bg-gray-950 px-6 py-6 md:mx-auto' id='contact'>
+    <section className='bg-gray-950 px-6 py-6 md:mx-auto scroll-mt-24' id='contact'>
       <div className=' py-10'>
         <div className='flex justify-center md:py-6'>
 
