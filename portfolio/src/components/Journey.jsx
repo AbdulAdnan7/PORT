@@ -18,7 +18,7 @@ export function JourneyMap() {
       year: "2024",
       title: "Built First Projects",
       description:
-        "Created multiple personal projects and contributed to open source communities",
+        "Created multiple personal projects and understands how things works",
       icon: Code2,
       type: "learning",
     },
