@@ -48,7 +48,7 @@ const Projects = () => {
       title: "Positivus",
       desc: "Modern saas landing page UI Only",
       status: "Building",
-      img: K,
+      img: '/Positivus.png',
       github: "",
       live: "https://positivus-zeta-eight.vercel.app/",
     },
