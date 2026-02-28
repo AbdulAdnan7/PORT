@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import K from "/k.png";
 import Note from '/Notes.gif'
 import { Github, ExternalLink } from "lucide-react";
 import BuildingPill from "./BuildingPill";
 
 const Projects = () => {
+
+   const [activeTab, setActiveTab]= useState('projects')
+
   const projects = [
     {
       title: "Lusios",
@@ -32,6 +35,29 @@ const Projects = () => {
     },
   ];
 
+  const designs = [
+    {
+      title: "Positivus",
+      desc: "Modern saas landing page UI Only",
+      status: "Building",
+      img: K,
+      github: "",
+      live: "https://positivus-zeta-eight.vercel.app/",
+    },
+  ]
+
+  const dataMap = {
+    projects,
+    designs
+  }
+
+  const tabs = [
+    { key: 'projects', label: 'Web Apps' },
+    { key: 'designs', label: 'UI Implementation', }
+  ]
+
+  const currentData = dataMap[activeTab] || []
+
   return (
     <section
       id="projects"
@@ -48,9 +74,25 @@ const Projects = () => {
           </p>
         </div>
 
+        {/** */}
+        <div className="flex justify-center gap-6 mb-10">
+         {
+          tabs.map((tab) => (
+            <button key={tab.key}
+            onClick={() => setActiveTab(tab.key) }
+             className={`pb-2 capitalize  transition ${
+              activeTab === tab.key ? 'border-b-2 border-white text-white' : 'border-transparent text-white/50 hover:text-white'
+             }`}
+            >
+              {tab.label}
+            </button>
+          ))
+         }
+        </div>
+
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
-          {projects.map((p, index) => (
+          {currentData.map((p, index) => (
             <div
               key={index}
               className="group w-full max-w-sm rounded-2xl
