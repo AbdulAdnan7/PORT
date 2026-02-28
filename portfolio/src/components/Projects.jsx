@@ -33,6 +33,14 @@ const Projects = () => {
       github: "https://github.com/AbdulAdnan7",
       live: "https://notes-sepia-nu.vercel.app",
     },
+    {
+      title: "Docucare",
+      desc: "A Whatsapp based bussiness for printouts and online services ",
+      status: 'Completed',
+      'img': K,
+      github: 'https://github.com/AbdulAdnan7',
+      live: 'https://docucares.vercel.app',
+    }
   ];
 
   const designs = [
@@ -113,7 +121,8 @@ const Projects = () => {
               {/* Title */}
               <h2 className="mt-4 font-semibold flex items-center justify-center gap-2">
                 {p.title}
-                {p.status && <BuildingPill text={p.status} />}
+                {p.status && <BuildingPill
+                text={p.status} />}
               </h2>
 
               {/* Description */}
