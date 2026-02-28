@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import K from "/k.png";
-import Note from '/Notes.gif'
+import Note from '/Notes.png'
 import { Github, ExternalLink } from "lucide-react";
 import BuildingPill from "./BuildingPill";
 
@@ -13,7 +13,7 @@ const Projects = () => {
       title: "Lusios",
       desc: "An expense manager app built with React and Tailwind CSS.",
       status: "Building",
-      img: K,
+      img: '/Lusios.png',
       github: "https://github.com/AbdulAdnan7",
       live: "https://lusios.vercel.app",
     },
@@ -37,7 +37,7 @@ const Projects = () => {
       title: "Docucare",
       desc: "A Whatsapp based bussiness for printouts and online services ",
       status: 'Completed',
-      'img': K,
+      'img': '/docucare.png',
       github: 'https://github.com/AbdulAdnan7',
       live: 'https://docucares.vercel.app',
     }
