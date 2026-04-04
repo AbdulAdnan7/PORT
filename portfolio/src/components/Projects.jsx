@@ -18,12 +18,12 @@ const Projects = () => {
       live: "https://lusios.vercel.app",
     },
     {
-      title: "Trip-Mind",
-      desc: "Real-time smart suggestions for planning trips abroad. {Trip Mind}",
+      title: "Vistree",
+      desc: "A Smart System Architecture Planner and daily tasks provider",
       status: "Building",
-      img: K,
+      img: '/vistree.png',
       github: "https://github.com/AbdulAdnan7",
-      live: "https://peerabduladnans.vercel.app",
+      live: "https://vistree-mu.vercel.app/",
     },
     {
       title: "Notes",
@@ -40,7 +40,8 @@ const Projects = () => {
       'img': '/docucare.png',
       github: 'https://github.com/AbdulAdnan7',
       live: 'https://docucares.vercel.app',
-    }
+    },
+    
   ];
 
   const designs = [
@@ -52,6 +53,14 @@ const Projects = () => {
       github: "",
       live: "https://positivus-zeta-eight.vercel.app/",
     },
+    {
+      title: "Elementum",
+      desc:  "A Modern UI landing page. taken from assessment",
+      status: "Completed",
+      img: '/elementum.png',
+      github: "https://github.com/AbdulAdnan7/elementum",
+      live: "https://elementums.vercel.app/"
+    }
   ]
 
   const dataMap = {
