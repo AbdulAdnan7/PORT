@@ -1,30 +1,26 @@
 import React from "react";
-import ST from '/ST.png'
-import CITY from '/City.png'
+import ST from "/ST.png";
+import CITY from "/City.png";
 const AboutMe = () => {
   return (
     <section className="bg-gray-950 py-4 scroll-mt-24" id="about">
       <div className="z-10 max-w-6xl mx-auto px-4">
-
-
         <div className="flex justify-center mb-10">
           <h1 className="text-6xl text-white">About Me</h1>
         </div>
-
 
         <div className="mb-10 text-center">
           <h1 className="text-white text-lg leading-relaxed">
             Hello, World! I'm Abdul Adnan, a full-stack developer who enjoys
             building clean, efficient, and well-designed web applications. I
-            focus on creating fast websites using React, Node.js,
-            Express, and MongoDB. I prefer simple architecture, subtle
-            animations, and polished UI over complexity. Currently sharpening my
-            skills in the MERN stack.
+            focus on creating fast websites using React, Node.js, Express, and
+            MongoDB. I prefer simple architecture, subtle animations, and
+            polished UI over complexity. Currently sharpening my skills in the
+            MERN stack.
           </h1>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
           <div className="bg-white/5 border border-white/10 text-white p-6 rounded-2xl backdrop-blur-xl">
             <h2 className="text-xl font-semibold mb-6 tracking-tight">
               Education
@@ -80,17 +76,13 @@ const AboutMe = () => {
                 </div>
               </div>
             </div>
-
           </div>
 
-
-
-
-
-          <div className="bg-linear-to-br from-rose-500/20 to-rose-300/10
+          <div
+            className="bg-linear-to-br from-rose-500/20 to-rose-300/10
 border border-rose-400/20 p-6 rounded-2xl backdrop-blur-xl
-flex flex-col items-center justify-center text-center">
-
+flex flex-col items-center justify-center text-center"
+          >
             {/* Logo */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -121,17 +113,22 @@ flex flex-col items-center justify-center text-center">
               Final Year Project
             </h3>
 
-            <p className="px-2 py-0.5 rounded-full text-xs
-          text-green-300 bg-green-500/10 border border-green-500/30">
+            <p
+              className="px-2 py-0.5 rounded-full text-xs
+          text-green-300 bg-green-500/10 border border-green-500/30"
+            >
               ✦ Coming Soon ✦
             </p>
           </div>
-
-
-
-
-
         </div>
+      </div>
+      <div className="flex items-center justify-center mt-20 bg-gray-950 p-4">
+        <div className="space-y-6">
+
+        <h1 className="text-6xl text-white text-center">Github Activity</h1>
+        <img src="https://ghchart.rshah.org/f43f5e/AbdulAdnan7" />
+        </div>
+
       </div>
     </section>
   );
