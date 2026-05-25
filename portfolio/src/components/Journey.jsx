@@ -24,7 +24,7 @@ export function JourneyMap() {
     },
     {
       year: "2025",
-      title: "Mastered Full Stack",
+      title: "Deep-dived into Full Stack",
       description:
         "Gained expertise in React, Node.js, and modern web technologies through hands-on learning",
       icon: Rocket,
