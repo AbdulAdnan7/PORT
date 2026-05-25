@@ -123,13 +123,22 @@ flex flex-col items-center justify-center text-center"
         </div>
       </div>
       <div className="flex items-center justify-center mt-20 bg-gray-950 p-4">
-        <div className="space-y-6">
+  <div className="space-y-6 w-full max-w-4xl">
+    <h1 className="text-6xl text-white text-center">Github Activity</h1>
 
-        <h1 className="text-6xl text-white text-center">Github Activity</h1>
-        <img src="https://ghchart.rshah.org/f43f5e/AbdulAdnan7" />
-        </div>
+    <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+      <p className="text-white/40 text-xs uppercase tracking-widest mb-4">
+        Contribution Graph
+      </p>
+      <img
+        src="https://ghchart.rshah.org/f43f5e/AbdulAdnan7"
+        alt="GitHub contribution chart"
+        className="w-full rounded"
+      />
+    </div>
 
-      </div>
+  </div>
+</div>
     </section>
   );
 };
