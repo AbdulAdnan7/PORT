@@ -122,7 +122,7 @@ flex flex-col items-center justify-center text-center"
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center mt-20 bg-gray-950 p-4">
+      <div className="flex items-center justify-center mt-20 p-4">
   <div className="space-y-6 w-full max-w-4xl">
     <h1 className="text-6xl text-white text-center">Github Activity</h1>
 

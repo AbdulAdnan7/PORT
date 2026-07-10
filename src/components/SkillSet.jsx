@@ -68,7 +68,7 @@ const SkillSet = () => {
 
   return (
     <>
-      <section className=' w-full py-8 bg-gray-950'>
+      <section className=' w-full py-8'>
         <div className='relative z-10 justify-center py-2 text-center'>
 
           <h1 className='text-white text-6xl'>Skills</h1>
