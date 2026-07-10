@@ -48,7 +48,7 @@ export function JourneyMap() {
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: 0.4 }}
     >
-      <h3 className="mb-12 text-6xl text-center text-white">
+      <h3 className="mb-12 text-6xl text-center">
         My Journey
       </h3>
 
