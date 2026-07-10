@@ -41,7 +41,7 @@ export function JourneyMap() {
   ];
 
   return (
-    <section className="bg-gray-950 py-16">
+    <section className="bg-bg py-16">
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}

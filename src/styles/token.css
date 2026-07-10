@@ -5,7 +5,7 @@
   --green-500: #22c55e; /* brand accent - availablilty dot, Hire Me Button, links */
 
    /* semantic tokens */
-   --color-bg: var(var(--white)); /* page bg */
+   --color-bg: var(--white); /* page bg */
    --color-text-primary: #0a0a0a; /* headings, main body text */
    --color-text-secondary: #6b6b6b; /* subtext, captions, muted labels */
    --color-border: #e5e5e5; /* card borders, dividers, pill outlines */
@@ -35,7 +35,7 @@
  /** DARK MODE OVERRIDES */
 
    .dark {
-    --color-bg: var(var(--black));
+    --color-bg: var(--black);
     --color-text-primary: $f5f5f0;
     --color-text-secondary: #a3a3a3;
     --color-border: rgba(255, 255, 255, 0.1);
@@ -57,6 +57,6 @@
         --color-text-secondary: #a3a3a3;
         --color-border: rgba(255,255,255,0.1);
         --color-surface: rgba(255, 255, 255, 0.05);
-        --color-accent: #f5f5f0
+        --color-accent: #f5f5f0;
     }
 }
