@@ -98,7 +98,7 @@ const Projects = () => {
             <button key={tab.key}
             onClick={() => setActiveTab(tab.key) }
              className={`pb-2 capitalize  transition ${
-              activeTab === tab.key ? 'border-b-2 border-white text-text-primary' : 'border-transparent text-text-secondary'
+              activeTab === tab.key ? 'border-b-2 text-text-primary' : 'border-transparent text-text-secondary'
              }`}
             >
               {tab.label}
