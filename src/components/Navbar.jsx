@@ -39,26 +39,26 @@ const Navbar = () => {
                     <div className='flex items-center gap-8 px-10 py-3 bg-white/10 backdrop-blur-xl border border-white/20 rounded-full shadow-lg'>
                         <button 
                             onClick={() => scrollToSection('hero')}
-                            className='gap-2 flex text-white hover:text-gray-300 items-center'
+                            className='gap-2 flex hover:text-gray-300 items-center'
                         >
                             <Home /> Home
                         </button>
                         <button 
                             onClick={() => scrollToSection('projects')}
-                            className='flex gap-2 text-white hover:text-gray-300 items-center'
+                            className='flex gap-2 hover:text-gray-300 items-center'
                         >
                             <Briefcase /> Projects
                         </button>
                       
                         <button 
                             onClick={() => scrollToSection('about')}
-                            className='flex gap-2 text-white hover:text-gray-300 items-center'
+                            className='flex gap-2  hover:text-gray-300 items-center'
                         >
                             <User /> About
                         </button>
                         <button 
                             onClick={() => scrollToSection('contact')}
-                            className='flex gap-2 text-white hover:text-gray-300 items-center'
+                            className='flex gap-2  hover:text-gray-300 items-center'
                         >
                             <Mail /> Contact
                         </button>
@@ -73,28 +73,27 @@ const Navbar = () => {
                     <div className='flex items-center justify-between gap-6 px-6 py-3 bg-white/10 border border-white/20 rounded-full backdrop-blur-xl shadow-lg'>
                         <button 
                             onClick={() => scrollToSection('hero')}
-                            className='text-white'
                         >
                             <Home className="w-6 h-6" />
                         </button>
                         <button 
                             onClick={() => scrollToSection('projects')}
-                            className='text-white'
+                            
                         >
                             <Briefcase className="w-6 h-6" />
                         </button>
-                        <span className='flex gap-2 text-white'>
+                        <span className='flex gap-2'>
                             <Clock />{time}
                         </span>
                         <button 
                             onClick={() => scrollToSection('about')}
-                            className='text-white'
+                            
                         >
                             <User className="w-6 h-6" />
                         </button>
                         <button 
                             onClick={() => scrollToSection('contact')}
-                            className='text-white'
+                        
                         >
                             <Mail className="w-6 h-6" />
                         </button>

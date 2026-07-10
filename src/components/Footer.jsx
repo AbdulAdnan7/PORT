@@ -3,11 +3,11 @@ import { Instagram, Github, Linkedin, Mail } from 'lucide-react'; // optional ic
 
 const Footer = () => {
   return (
-    <footer className=" text-white py-10">
+    <footer className=" py-10">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
         
         {/* Left: Copyright */}
-        <p className="text-sm text-white/60">&copy; {new Date().getFullYear()} Abdul Adnan. All rights reserved.</p>
+        <p className="text-sm">&copy; {new Date().getFullYear()} Abdul Adnan. All rights reserved.</p>
         
         {/* Right: Social links */}
         <div className="flex gap-4">

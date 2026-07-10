@@ -78,7 +78,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className=" text-white py-16 scroll-mt-24"
+      className="  py-16 scroll-mt-24"
     >
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
@@ -86,7 +86,7 @@ const Projects = () => {
           <h1 className="text-5xl md:text-6xl font-semibold tracking-tight">
             Projects
           </h1>
-          <p className="text-white/50 mt-3">
+          <p className=" mt-3">
             A selection of things I’m currently building
           </p>
         </div>
@@ -98,7 +98,7 @@ const Projects = () => {
             <button key={tab.key}
             onClick={() => setActiveTab(tab.key) }
              className={`pb-2 capitalize  transition ${
-              activeTab === tab.key ? 'border-b-2 border-white text-white' : 'border-transparent text-white/50 hover:text-white'
+              activeTab === tab.key ? 'border-b-2 border-white text-text-primary' : 'border-transparent text-text-secondary'
              }`}
             >
               {tab.label}
@@ -135,7 +135,7 @@ const Projects = () => {
               </h2>
 
               {/* Description */}
-              <p className="mt-2 text-sm text-white/60 leading-relaxed">
+              <p className="mt-2 text-sm leading-relaxed">
                 {p.desc}
               </p>
 
@@ -147,8 +147,8 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 rounded-full
           border border-white/20 px-4 py-1.5 text-sm
-          text-white/80 transition
-          hover:text-white hover:border-white/40"
+           transition
+       hover:border-white/40"
                 >
                   <Github className="w-4 h-4" />
                   Code
@@ -160,8 +160,8 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 rounded-full
           border border-white/20 px-4 py-1.5 text-sm
-          text-white/80 transition
-          hover:text-white hover:border-white/40"
+          transition
+           hover:border-white/40"
                 >
                   <ExternalLink className="w-4 h-4" />
                   Live

@@ -6,11 +6,11 @@ const AboutMe = () => {
     <section className=" py-4 scroll-mt-24" id="about">
       <div className="z-10 max-w-6xl mx-auto px-4">
         <div className="flex justify-center mb-10">
-          <h1 className="text-6xl text-white">About Me</h1>
+          <h1 className="text-6xl">About Me</h1>
         </div>
 
         <div className="mb-10 text-center">
-          <h1 className="text-white text-lg leading-relaxed">
+          <h1 className=" text-lg leading-relaxed">
             Hello, World! I'm Abdul Adnan, a full-stack developer who enjoys
             building clean, efficient, and well-designed web applications. I
             focus on creating fast websites using React, Node.js, Express, and
@@ -21,7 +21,7 @@ const AboutMe = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-white/5 border border-white/10 text-white p-6 rounded-2xl backdrop-blur-xl">
+          <div className="bg-white/5 border border-white/10 p-6 rounded-2xl backdrop-blur-xl">
             <h2 className="text-xl font-semibold mb-6 tracking-tight">
               Education
             </h2>
@@ -38,10 +38,10 @@ const AboutMe = () => {
                 </div>
 
                 <div className="relative pl-5 border-l border-white/10">
-                  <p className="font-medium text-white">
+                  <p className="font-medium ">
                     St. Joseph&apos;s Degree College — BCA
                   </p>
-                  <p className="mt-1 text-sm text-white/60">
+                  <p className="mt-1 text-sm ">
                     2023 – 2026 ·{" "}
                     <span className="text-emerald-400 font-medium">
                       Ongoing
@@ -61,10 +61,10 @@ const AboutMe = () => {
                 </div>
 
                 <div className="relative pl-5 border-l border-white/10">
-                  <p className="font-medium text-white">
+                  <p className="font-medium ">
                     Government City College — Commerce
                   </p>
-                  <p className="mt-1 text-sm text-white/60">
+                  <p className="mt-1 text-sm ">
                     2021 – 2023 ·{" "}
                     <span
                       className="px-2 py-0.5 rounded-full text-xs
@@ -86,7 +86,7 @@ flex flex-col items-center justify-center text-center"
             {/* Logo */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-12 h-12 text-white mb-3"
+              className="w-12 h-12 mb-3"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -109,7 +109,7 @@ flex flex-col items-center justify-center text-center"
               />
             </svg>
 
-            <h3 className="text-white text-lg font-semibold mb-1">
+            <h3 className=" text-lg font-semibold mb-1">
               Final Year Project
             </h3>
 
@@ -124,10 +124,10 @@ flex flex-col items-center justify-center text-center"
       </div>
       <div className="flex items-center justify-center mt-20 p-4">
   <div className="space-y-6 w-full max-w-4xl">
-    <h1 className="text-6xl text-white text-center">Github Activity</h1>
+    <h1 className="text-6xl  text-center">Github Activity</h1>
 
     <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-      <p className="text-white/40 text-xs uppercase tracking-widest mb-4">
+      <p className=" text-xs uppercase tracking-widest mb-4">
         Contribution Graph
       </p>
       <img

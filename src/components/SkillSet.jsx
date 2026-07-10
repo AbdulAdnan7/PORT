@@ -71,14 +71,14 @@ const SkillSet = () => {
       <section className=' w-full py-8'>
         <div className='relative z-10 justify-center py-2 text-center'>
 
-          <h1 className='text-white text-6xl'>Skills</h1>
+          <h1 className=' text-6xl'>Skills</h1>
         </div>
 
         <div>
        {
         skillCateogary.map((cateo, i) => (
           <div key={cateo.category} className='px-4 md:px-20 py-4'>
-            <div key={cateo.i} className='text-white text-center'>
+            <div key={cateo.i} className=' text-center'>
               <h1 className='text-2xl'>  {cateo.category}
             </h1>
 
@@ -88,7 +88,7 @@ const SkillSet = () => {
                   return (
                     <div key={skill.name} className='bg-white/10 border border-white/20 gap-2 rounded-full flex py-2 px-6 mt-4'>
                     { Icon && <Icon/> }
-                    <span className='text-white'>{skill.name}</span>
+                    <span>{skill.name}</span>
                     </div>
                   )
 })}

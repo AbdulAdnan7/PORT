@@ -83,9 +83,9 @@ const Contact = () => {
     >
       <div className=" py-10">
         <div className="flex justify-center md:py-6">
-          <h1 className="text-white text-6xl">Contact Me</h1>
+          <h1 className=" text-6xl">Contact Me</h1>
         </div>
-        <p className="text-white/60 text-xl mt-4 max-w-2xl mx-auto text-center">
+        <p className="text-xl mt-4 max-w-2xl mx-auto text-center">
           {" "}
           Got a project or want to collaborate? Send me a message and I’ll get
           back to you.
@@ -94,14 +94,14 @@ const Contact = () => {
       <div className="bg-white/10 border border-white/20 backdrop-blur-xl p-8 rounded-2xl mt-10 max-w-xl mx-auto">
         <form ref={form} onSubmit={handleSubmit} className="py-2">
           <div className="py-4">
-            <label htmlFor="" className="text-white text-2xl">
+            <label htmlFor="" className=" text-2xl">
               Name
             </label>
             <input
               name="name"
               type="name"
               value={name}
-              className="w-full mt-2 text-white p-2 bg-white/10 border-white/20 border rounded"
+              className="w-full mt-2 p-2 bg-white/10 border-white/20 border rounded"
               placeholder="Enter your name"
               onChange={(e) => setName(e.target.value)}
               required
@@ -109,14 +109,14 @@ const Contact = () => {
             {errors.name && <p className="text-red-400 mt-1">{errors.name}</p>}
           </div>
           <div>
-            <label htmlFor="" className="text-white text-2xl">
+            <label htmlFor="" className=" text-2xl">
               Email
             </label>
             <input
               name="user_email"
               type="text"
               value={email}
-              className="w-full mt-2 text-white p-2 bg-white/10 border-white/20 border rounded"
+              className="w-full mt-2 p-2 bg-white/10 border-white/20 border rounded"
               placeholder="Enter your email"
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -126,7 +126,7 @@ const Contact = () => {
             )}
           </div>
 
-          <div className="text-white py-4">
+          <div className="py-4">
             <label htmlFor="description" className="text-2xl font-medium">
               Message
             </label>
@@ -137,7 +137,7 @@ const Contact = () => {
               onChange={(e) => setDescription(e.target.value)}
               rows="5"
               placeholder="What's on your mind"
-              className="w-full px-4 py-3 mt-2 bg-white/10 border border-white/20 text-white placeholder-white/50 rounded-xl focus:outline-none transition resize-none"
+              className="w-full px-4 py-3 mt-2 bg-white/10 border border-white/20  placeholder-white/50 rounded-xl focus:outline-none transition resize-none"
               required
             />
 
@@ -151,7 +151,7 @@ const Contact = () => {
               type="submit"
               disabled={loading}
               className="w-full bg-linear-to-br from-emerald-500/20 to-emerald-300/10 
-              border border-emerald-400/20 text-white p-2 rounded 
+              border border-emerald-400/20  p-2 rounded 
              hover:from-emerald-500/40 hover:to-emerald-300/20 transition-all"
             >
                {loading ? 'Sending...' : "Send Email"}
