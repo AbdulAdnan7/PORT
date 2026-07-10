@@ -78,7 +78,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="bg-gray-950 text-white py-16 scroll-mt-24"
+      className=" text-white py-16 scroll-mt-24"
     >
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}

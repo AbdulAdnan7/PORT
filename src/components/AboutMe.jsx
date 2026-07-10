@@ -3,7 +3,7 @@ import ST from "/ST.png";
 import CITY from "/City.png";
 const AboutMe = () => {
   return (
-    <section className="bg-gray-950 py-4 scroll-mt-24" id="about">
+    <section className=" py-4 scroll-mt-24" id="about">
       <div className="z-10 max-w-6xl mx-auto px-4">
         <div className="flex justify-center mb-10">
           <h1 className="text-6xl text-white">About Me</h1>

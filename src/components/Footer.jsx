@@ -3,7 +3,7 @@ import { Instagram, Github, Linkedin, Mail } from 'lucide-react'; // optional ic
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-950 text-white py-10">
+    <footer className=" text-white py-10">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
         
         {/* Left: Copyright */}

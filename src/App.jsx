@@ -28,7 +28,7 @@ function App() {
 
   return (
     <>
-      <div className='relative'>
+      <div className='relative bg-bg text-text-primary'>
         <AnimatedBackground variant='mixed' density='medium' />
         <div className='relative z-10'>
           <Navbar />
