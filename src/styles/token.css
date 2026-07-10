@@ -1,0 +1,62 @@
+:root {
+    /* raw palette **/
+  --black: #0a0a0d; /* used for dark mode */
+  --white: #ffffff; /* pure white, used for light mode*/
+  --green-500: #22c55e; /* brand accent - availablilty dot, Hire Me Button, links */
+
+   /* semantic tokens */
+   --color-bg: var(var(--white)); /* page bg */
+   --color-text-primary: #0a0a0a; /* headings, main body text */
+   --color-text-secondary: #6b6b6b; /* subtext, captions, muted labels */
+   --color-border: #e5e5e5; /* card borders, dividers, pill outlines */
+   --color-surface: #f5f5f5; /* slightly raised bg- cards, badges, hover bg */
+   --color-accent: #0a0a0a; /* CTAs, availability dot, links, focus rings */
+
+
+   /** SPACING SCALE */
+
+   --space-xs: 0.5rem; /* 8px - tight gaps: Icon + text, badge padding */
+   --space-sm: 1rem; /* 16px - default gap between related elements (buttons, icons) */
+   --space-md: 1.5rem; /* 24px - spacing between a heading and its paragraph */
+   --space-lg: 2rem; /* 32pc - spacing between distinct sections of a components */
+   --space-xl: 4rem; /* 64px - spacing between major page sections (hero + next section) */
+
+   /** RADIUS SCALE */
+   
+
+   --radius-sm: 8px; /* buttons, cards, inputs */
+   --radius-full: 9999px; /* pills- badges, rounded nav, avatar circles */
+
+
+  
+
+}
+
+ /** DARK MODE OVERRIDES */
+
+   .dark {
+    --color-bg: var(var(--black));
+    --color-text-primary: $f5f5f0;
+    --color-text-secondary: #a3a3a3;
+    --color-border: rgba(255, 255, 255, 0.1);
+    --color-surface: rgba(255,255,255,0.05);
+    --color-accent: #f5f5f0
+   }
+
+/* ============================================
+   OS-LEVEL FALLBACK
+   Applies dark mode from CSS alone, before your
+   JS toggle mounts - kills the light-mode flash
+   on first load if the user's OS is set to dark.
+   Your ThemeContext toggle still works on top of this.
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+    :root:not(.light) {
+        --color-bg: var(--black);
+        --color-text-primary: #f5f5f0;
+        --color-text-secondary: #a3a3a3;
+        --color-border: rgba(255,255,255,0.1);
+        --color-surface: rgba(255, 255, 255, 0.05);
+        --color-accent: #f5f5f0
+    }
+}
