@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Home, User, Briefcase, Mail, Clock } from 'lucide-react'
-
+import Logo from '../assets/Logo.svg?react'
 const Navbar = () => {
     const [time, setTime] = useState("");
 
@@ -37,6 +37,9 @@ const Navbar = () => {
             <nav className='fixed inset-x-0 top-12 z-50'>
                 <div className='hidden md:flex w-full justify-center'>
                     <div className='flex items-center gap-8 px-10 py-3 bg-white/10 backdrop-blur-xl border border-white/20 rounded-full shadow-lg'>
+                    <div>
+                       <Logo alt="Peer Abdul Adnan" className="h-8 w-auto" />
+                    </div>
                         <button 
                             onClick={() => scrollToSection('hero')}
                             className='gap-2 flex hover:text-gray-300 items-center'
@@ -105,3 +108,5 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
