@@ -6,7 +6,7 @@ import BuildingPill from "./BuildingPill";
 
 const Projects = () => {
 
-   const [activeTab, setActiveTab]= useState('projects')
+  const [activeTab, setActiveTab] = useState('projects')
 
   const projects = [
     {
@@ -41,7 +41,7 @@ const Projects = () => {
       github: 'https://github.com/AbdulAdnan7',
       live: 'https://docucares.vercel.app',
     },
-    
+
   ];
 
   const designs = [
@@ -55,7 +55,7 @@ const Projects = () => {
     },
     {
       title: "Elementum",
-      desc:  "A Modern UI landing page. taken from assessment",
+      desc: "A Modern UI landing page. taken from assessment",
       status: "Completed",
       img: '/elementum.png',
       github: "https://github.com/AbdulAdnan7/elementum",
@@ -93,18 +93,17 @@ const Projects = () => {
 
         {/** */}
         <div className="flex justify-center gap-6 mb-10">
-         {
-          tabs.map((tab) => (
-            <button key={tab.key}
-            onClick={() => setActiveTab(tab.key) }
-             className={`pb-2 capitalize  transition ${
-              activeTab === tab.key ? 'border-b-2 text-text-primary' : 'border-transparent text-text-secondary'
-             }`}
-            >
-              {tab.label}
-            </button>
-          ))
-         }
+          {
+            tabs.map((tab) => (
+              <button key={tab.key}
+                onClick={() => setActiveTab(tab.key)}
+                className={`pb-2 capitalize  transition ${activeTab === tab.key ? 'border-b-2 text-text-primary' : 'border-transparent text-text-secondary'
+                  }`}
+              >
+                {tab.label}
+              </button>
+            ))
+          }
         </div>
 
         {/* Grid */}
@@ -112,59 +111,38 @@ const Projects = () => {
           {currentData.map((p, index) => (
             <div
               key={index}
-              className="group w-full max-w-sm rounded-2xl
-      border border-white/10 bg-white/5 p-4 text-center
-      transition-all duration-300
-      hover:bg-white/10 hover:-translate-y-1 hover:shadow-2xl"
+              className="group w-full max-w-sm text-center transition-all duration-300 hover:-translate-y-1"
             >
-              {/* Preview (GIF-safe) */}
-              <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black/20">
+              {/* Image — give it the border instead */}
+              <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition">
                 <img
                   src={p.img}
                   alt={p.title}
                   loading="lazy"
-                  className="absolute inset-0 w-full h-full object-contain"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
 
-              {/* Title */}
+              {/* Title + status */}
               <h2 className="mt-4 font-semibold flex items-center justify-center gap-2">
                 {p.title}
-                {p.status && <BuildingPill
-                text={p.status} />}
+                {p.status && <BuildingPill text={p.status} />}
               </h2>
 
               {/* Description */}
-              <p className="mt-2 text-sm leading-relaxed">
+              <p className="mt-1 text-sm text-text-secondary leading-relaxed">
                 {p.desc}
               </p>
 
               {/* Links */}
-              <div className="mt-5 flex justify-center gap-3">
-                <a
-                  href={p.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 rounded-full
-          border border-white/20 px-4 py-1.5 text-sm
-           transition
-       hover:border-white/40"
-                >
-                  <Github className="w-4 h-4" />
-                  Code
+              <div className="mt-4 flex justify-center gap-3">
+                <a href={p.github} target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 rounded-full border border-white/20 px-4 py-1.5 text-sm hover:border-white/40 transition">
+                  <Github className="w-4 h-4" /> Code
                 </a>
-
-                <a
-                  href={p.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 rounded-full
-          border border-white/20 px-4 py-1.5 text-sm
-          transition
-           hover:border-white/40"
-                >
-                  <ExternalLink className="w-4 h-4" />
-                  Live
+                <a href={p.live} target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 rounded-full border border-white/20 px-4 py-1.5 text-sm hover:border-white/40 transition">
+                  <ExternalLink className="w-4 h-4" /> Live
                 </a>
               </div>
             </div>

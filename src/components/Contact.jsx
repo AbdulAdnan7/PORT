@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Github, Linkedin, Twitter } from 'lucide-react'
 
 const Contact = () => {
   const form = useRef(null);
@@ -77,91 +78,118 @@ const Contact = () => {
   };
 
   return (
-    <section
-      className=" px-6 py-6 md:mx-auto scroll-mt-24"
-      id="contact"
-    >
-      <div className=" py-10">
-        <div className="flex justify-center md:py-6">
-          <h1 className=" text-6xl">Contact Me</h1>
+    <section className="px-6 py-16 scroll-mt-24" id="contact">
+      <div className="max-w-4xl mx-auto">
+
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h1 className="text-5xl md:text-6xl font-semibold">Contact Me</h1>
         </div>
-        <p className="text-xl mt-4 max-w-2xl mx-auto text-center">
-          {" "}
-          Got a project or want to collaborate? Send me a message and I’ll get
-          back to you.
-        </p>
-      </div>
-      <div className="bg-white/10 border border-white/20 backdrop-blur-xl p-8 rounded-2xl mt-10 max-w-xl mx-auto">
-        <form ref={form} onSubmit={handleSubmit} className="py-2">
-          <div className="py-4">
-            <label htmlFor="" className=" text-2xl">
-              Name
-            </label>
-            <input
-              name="name"
-              type="name"
-              value={name}
-              className="w-full mt-2 p-2 bg-white/10 border-white/20 border rounded"
-              placeholder="Enter your name"
-              onChange={(e) => setName(e.target.value)}
-              required
-            />
-            {errors.name && <p className="text-red-400 mt-1">{errors.name}</p>}
-          </div>
-          <div>
-            <label htmlFor="" className=" text-2xl">
-              Email
-            </label>
-            <input
-              name="user_email"
-              type="text"
-              value={email}
-              className="w-full mt-2 p-2 bg-white/10 border-white/20 border rounded"
-              placeholder="Enter your email"
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-            {errors.email && (
-              <p className="text-red-400 mt-1">{errors.email}</p>
-            )}
-          </div>
 
-          <div className="py-4">
-            <label htmlFor="description" className="text-2xl font-medium">
-              Message
-            </label>
-            <textarea
-              id="description"
-              name="message"
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
-              rows="5"
-              placeholder="What's on your mind"
-              className="w-full px-4 py-3 mt-2 bg-white/10 border border-white/20  placeholder-white/50 rounded-xl focus:outline-none transition resize-none"
-              required
-            />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
 
-            {errors.description && (
-              <p className="text-red-400 mt-1">{errors.description}</p>
-            )}
+          {/* Left */}
+          <div className="flex flex-col justify-center gap-6">
+            <div>
+              <h2 className="text-xl font-medium mb-2">Let's work together</h2>
+              <p className="text-text-secondary text-sm leading-relaxed">
+                Got a project, opportunity, or just want to say hi? My inbox is always open — I'll get back to you as soon as I can.
+              </p>
+            </div>
+
+            <div className="space-y-3">
+              <div className="flex items-center gap-3 text-sm">
+                <span className="text-text-secondary">Email</span>
+                <a href="mailto:peerabduladnan@gmail.com" className="hover:text-white transition">
+                  peerabduladnan@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center gap-3 text-sm">
+                <span className="text-text-secondary">Location</span>
+                <span>Hyderabad, India</span>
+              </div>
+              <div className="flex items-center gap-3 text-sm">
+                <span className="text-text-secondary">Status</span>
+                <span className="flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                  Open to work
+                </span>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <a href="https://github.com/AbdulAdnan7" target="_blank" rel="noopener noreferrer">
+                <Github className="w-5 h-5 text-text-secondary hover:text-white transition" />
+              </a>
+              <a href="https://linkedin.com/in/peerabduladnan" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="w-5 h-5 text-text-secondary hover:text-white transition" />
+              </a>
+              <a href="https://x.com/peerabduladnan" target="_blank" rel="noopener noreferrer">
+                <Twitter className="w-5 h-5 text-text-secondary hover:text-white transition" />
+              </a>
+            </div>
           </div>
 
-          <div>
+          {/* Right — Form */}
+          <form ref={form} onSubmit={handleSubmit} className="space-y-4">
+            <div>
+              <label className="text-sm text-text-secondary mb-1.5 block">Name</label>
+              <input
+                name="name"
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Your name"
+                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm placeholder:text-text-secondary focus:outline-none focus:border-white/30 transition"
+              />
+              {errors.name && <p className="text-red-400 text-xs mt-1">{errors.name}</p>}
+            </div>
+
+            <div>
+              <label className="text-sm text-text-secondary mb-1.5 block">Email</label>
+              <input
+                name="user_email"
+                type="text"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="your@email.com"
+                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm placeholder:text-text-secondary focus:outline-none focus:border-white/30 transition"
+              />
+              {errors.email && <p className="text-red-400 text-xs mt-1">{errors.email}</p>}
+            </div>
+
+            <div>
+              <label className="text-sm text-text-secondary mb-1.5 block">Message</label>
+              <textarea
+                name="message"
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+                rows="5"
+                placeholder="What's on your mind?"
+                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm placeholder:text-text-secondary focus:outline-none focus:border-white/30 transition resize-none"
+              />
+              {errors.description && <p className="text-red-400 text-xs mt-1">{errors.description}</p>}
+            </div>
+
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-linear-to-br from-emerald-500/20 to-emerald-300/10 
-              border border-emerald-400/20  p-2 rounded 
-             hover:from-emerald-500/40 hover:to-emerald-300/20 transition-all"
+              className="w-full py-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 text-sm font-medium transition"
             >
-               {loading ? 'Sending...' : "Send Email"}
+              {loading ? 'Sending...' : 'Send Message'}
             </button>
-          </div>
-        </form>
-        {status && <p className="text-center text-green-600 mt-4">{status}</p>}
+
+            {status && (
+              <p className={`text-center text-sm ${status.includes('Failed') ? 'text-red-400' : 'text-green-400'}`}>
+                {status}
+              </p>
+            )}
+          </form>
+
+        </div>
       </div>
     </section>
-  );
+  )
 };
 
 export default Contact;

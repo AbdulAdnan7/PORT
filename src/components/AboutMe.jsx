@@ -3,144 +3,66 @@ import ST from "/ST.png";
 import CITY from "/City.png";
 const AboutMe = () => {
   return (
-    <section className=" py-4 scroll-mt-24" id="about">
-      <div className="z-10 max-w-6xl mx-auto px-4">
-        <div className="flex justify-center mb-10">
-          <h1 className="text-6xl">About Me</h1>
+    <section className="py-16 scroll-mt-24" id="about">
+      <div className="max-w-4xl mx-auto px-6">
+
+        {/* Header */}
+        <div className="text-center mb-10">
+          <h1 className="text-5xl md:text-6xl font-semibold">About Me</h1>
+          <p className="mt-4 text-text-secondary leading-relaxed max-w-2xl mx-auto">
+            I'm Abdul Adnan, a full-stack developer who enjoys building clean, efficient web apps.
+            I work with React, Node.js, Express, and MongoDB — preferring simple architecture and polished UI over complexity.
+          </p>
         </div>
 
-        <div className="mb-10 text-center">
-          <h1 className=" text-lg leading-relaxed">
-            Hello, World! I'm Abdul Adnan, a full-stack developer who enjoys
-            building clean, efficient, and well-designed web applications. I
-            focus on creating fast websites using React, Node.js, Express, and
-            MongoDB. I prefer simple architecture, subtle animations, and
-            polished UI over complexity. Currently sharpening my skills in the
-            MERN stack.
-          </h1>
-        </div>
-
+        {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-white/5 border border-white/10 p-6 rounded-2xl backdrop-blur-xl">
-            <h2 className="text-xl font-semibold mb-6 tracking-tight">
-              Education
-            </h2>
 
-            <div className="space-y-8">
-              {/* Item */}
-              <div className="flex items-start gap-6">
-                <div className="w-16 h-16 flex items-center justify-center">
-                  <img
-                    src={ST}
-                    alt="St. Joseph's Degree College"
-                    className="max-w-full max-h-full object-contain"
-                  />
-                </div>
+          {/* Education */}
+          <div className="bg-white/5 border border-white/10 p-6 rounded-2xl">
+            <h2 className="text-sm uppercase tracking-widest text-text-secondary mb-6">Education</h2>
 
-                <div className="relative pl-5 border-l border-white/10">
-                  <p className="font-medium ">
-                    St. Joseph&apos;s Degree College — BCA
-                  </p>
-                  <p className="mt-1 text-sm ">
-                    2023 – 2026 ·{" "}
-                    <span className="text-emerald-400 font-medium">
-                      Ongoing
-                    </span>
-                  </p>
+            <div className="space-y-6">
+              <div className="flex items-center gap-4">
+                <img src={ST} alt="St. Joseph's" className="w-10 h-10 object-contain" />
+                <div>
+                  <p className="font-medium text-sm">St. Joseph's Degree College</p>
+                  <p className="text-xs text-text-secondary mt-0.5">BCA · 2023 – 2026 · <span className="text-blue-400">Completed</span></p>
                 </div>
               </div>
 
-              {/* Item */}
-              <div className="flex items-start gap-6">
-                <div className="w-16 h-16 flex items-center justify-center">
-                  <img
-                    src={CITY}
-                    alt="Government City College"
-                    className="max-w-full max-h-full object-contain"
-                  />
-                </div>
-
-                <div className="relative pl-5 border-l border-white/10">
-                  <p className="font-medium ">
-                    Government City College — Commerce
-                  </p>
-                  <p className="mt-1 text-sm ">
-                    2021 – 2023 ·{" "}
-                    <span
-                      className="px-2 py-0.5 rounded-full text-xs
-          text-blue-300 bg-blue-500/10 border border-blue-500/30"
-                    >
-                      Completed
-                    </span>
-                  </p>
+              <div className="flex items-center gap-4">
+                <img src={CITY} alt="City College" className="w-10 h-10 object-contain" />
+                <div>
+                  <p className="font-medium text-sm">Government City College</p>
+                  <p className="text-xs text-text-secondary mt-0.5">Commerce · 2021 – 2023 · <span className="text-blue-400">Completed</span></p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div
-            className="bg-linear-to-br from-rose-500/20 to-rose-300/10
-border border-rose-400/20 p-6 rounded-2xl backdrop-blur-xl
-flex flex-col items-center justify-center text-center"
-          >
-            {/* Logo */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-12 h-12 mb-3"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="1.5"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12 14.25L3.75 9.75 12 5.25l8.25 4.5L12 14.25z"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 9.75v4.5L12 19.5l8.25-5.25v-4.5"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12 19.5v-5.25"
-              />
-            </svg>
+          {/* GitHub Activity */}
 
-            <h3 className=" text-lg font-semibold mb-1">
-              Final Year Project
-            </h3>
 
-            <p
-              className="px-2 py-0.5 rounded-full text-xs
-          text-green-300 bg-green-500/10 border border-green-500/30"
-            >
-              ✦ Coming Soon ✦
-            </p>
+          <div className="bg-gradient-to-br from-rose-500/20 to-rose-300/10 border border-rose-400/20 p-6 rounded-2xl flex flex-col items-center justify-center text-center">
+
+            <div className="mt-10">
+              <p className="text-xs uppercase tracking-widest text-text-secondary mb-4">GitHub Activity</p>
+              <img
+                src="https://ghchart.rshah.org/f43f5e/AbdulAdnan7"
+                alt="GitHub contributions"
+                className="w-full rounded-2xl"
+              />
+            </div>
           </div>
+
         </div>
+
+
+
       </div>
-      <div className="flex items-center justify-center mt-20 p-4">
-  <div className="space-y-6 w-full max-w-4xl">
-    <h1 className="text-6xl  text-center">Github Activity</h1>
-
-    <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-      <p className=" text-xs uppercase tracking-widest mb-4">
-        Contribution Graph
-      </p>
-      <img
-        src="https://ghchart.rshah.org/f43f5e/AbdulAdnan7"
-        alt="GitHub contribution chart"
-        className="w-full rounded"
-      />
-    </div>
-
-  </div>
-</div>
     </section>
-  );
+  )
 };
 
 export default AboutMe;

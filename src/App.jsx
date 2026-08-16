@@ -8,19 +8,19 @@ import AboutMe from './components/AboutMe'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
-import  JourneyMap  from './components/Journey'
+import JourneyMap from './components/Journey'
 
 function App() {
   useEffect(() => {
     window.scrollTo(0, 0)
-    
+
     if ('scrollRestoration' in history) {
       history.scrollRestoration = 'manual'
     }
-    
+
     window.history.replaceState(null, null, ' ')
-    
-  
+
+
     setTimeout(() => {
       window.scrollTo(0, 0)
     }, 100)
@@ -29,7 +29,6 @@ function App() {
   return (
     <>
       <div className='relative bg-bg text-text-primary'>
-        <AnimatedBackground variant='mixed' density='medium' />
         <div className='relative z-10'>
           <Navbar />
           <Hero />
