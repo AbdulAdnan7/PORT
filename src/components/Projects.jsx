@@ -1,17 +1,19 @@
 import React, { useState } from "react";
 import K from "/k.png";
 import Note from '/Notes.png'
-import { Github, ExternalLink } from "lucide-react";
+import { Github, Linkedin, Twitter, ExternalLink } from "lucide-react";
 import BuildingPill from "./BuildingPill";
+import { TechIcons } from './SkillSet'
 
 const Projects = () => {
 
   const [activeTab, setActiveTab] = useState('projects')
-
   const projects = [
     {
       title: "Lusios",
-      desc: "An expense manager app built with React and Tailwind CSS.",
+      desc: "An expense manager app to take control of your finances.",
+      problem: "Solves the problem of untracked daily spending and poor budgeting habits.",
+      tech: ["React", "Tailwind CSS"],
       status: "Building",
       img: '/Lusios.png',
       github: "https://github.com/AbdulAdnan7",
@@ -19,7 +21,9 @@ const Projects = () => {
     },
     {
       title: "Vistree",
-      desc: "A Smart System Architecture Planner and daily tasks provider",
+      desc: "A Smart System Architecture Planner and daily task manager.",
+      problem: "Helps developers plan and visualize software architecture before building.",
+      tech: ["NextJS", "Tailwind CSS"],
       status: "Building",
       img: '/vistree.png',
       github: "https://github.com/AbdulAdnan7",
@@ -28,26 +32,31 @@ const Projects = () => {
     {
       title: "Notes",
       desc: "A fast, clean, and secure notes app for managing personal ideas.",
+      problem: "A distraction-free alternative to bloated note-taking apps.",
+      tech: ["React", "Session Storage"],
       status: "Completed",
-      img: Note,
+      img: '/Notes.png',
       github: "https://github.com/AbdulAdnan7",
       live: "https://notes-sepia-nu.vercel.app",
     },
     {
       title: "Docucare",
-      desc: "A Whatsapp based bussiness for printouts and online services ",
-      status: 'Completed',
-      'img': '/docucare.png',
-      github: 'https://github.com/AbdulAdnan7',
-      live: 'https://docucares.vercel.app',
+      desc: "A WhatsApp-based business for printouts and online services.",
+      problem: "Makes document printing and delivery accessible without visiting a shop.",
+      tech: ["React", "Tailwind CSS"],
+      status: "Completed",
+      img: '/docucare.png',
+      github: "https://github.com/AbdulAdnan7",
+      live: "https://docucares.vercel.app",
     },
-
-  ];
+  ]
 
   const designs = [
     {
       title: "Positivus",
-      desc: "Modern saas landing page UI Only",
+      desc: "Modern SaaS landing page UI.",
+      problem: "A pixel-perfect implementation of a trending SaaS design.",
+      tech: ["React", "Tailwind CSS"],
       status: "Building",
       img: '/Positivus.png',
       github: "",
@@ -55,12 +64,14 @@ const Projects = () => {
     },
     {
       title: "Elementum",
-      desc: "A Modern UI landing page. taken from assessment",
+      desc: "A modern UI landing page from an assessment.",
+      problem: "Built to demonstrate UI implementation skills from a design spec.",
+      tech: ["React", "Tailwind CSS"],
       status: "Completed",
       img: '/elementum.png',
       github: "https://github.com/AbdulAdnan7/elementum",
-      live: "https://elementums.vercel.app/"
-    }
+      live: "https://elementums.vercel.app/",
+    },
   ]
 
   const dataMap = {
@@ -109,18 +120,11 @@ const Projects = () => {
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
           {currentData.map((p, index) => (
-            <div
-              key={index}
-              className="group w-full max-w-sm text-center transition-all duration-300 hover:-translate-y-1"
-            >
-              {/* Image — give it the border instead */}
+            <div key={index} className="group w-full max-w-sm text-center transition-all duration-300 hover:-translate-y-1">
+
+              {/* Image */}
               <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition">
-                <img
-                  src={p.img}
-                  alt={p.title}
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
+                <img src={p.img} alt={p.title} loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
               </div>
 
               {/* Title + status */}
@@ -129,10 +133,23 @@ const Projects = () => {
                 {p.status && <BuildingPill text={p.status} />}
               </h2>
 
-              {/* Description */}
-              <p className="mt-1 text-sm text-text-secondary leading-relaxed">
-                {p.desc}
-              </p>
+              {/* Desc */}
+              <p className="mt-1 text-sm text-text-secondary leading-relaxed">{p.desc}</p>
+
+              {/* Problem */}
+              <p className="mt-1 text-xs text-text-secondary italic">{p.problem}</p>
+
+              <div className="flex flex-wrap justify-center gap-1.5 mt-3">
+                {p.tech.map((t) => {
+                  const Icon = TechIcons[t.replace(/\s/g, '').replace('.', '')]
+                  return (
+                    <span key={t} className="text-xs px-2 py-0.5 rounded-full border border-white/10 bg-white/5 text-text-secondary flex items-center gap-1">
+                      {Icon && <Icon />}
+                      {t}
+                    </span>
+                  )
+                })}
+              </div>
 
               {/* Links */}
               <div className="mt-4 flex justify-center gap-3">
@@ -148,7 +165,6 @@ const Projects = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
